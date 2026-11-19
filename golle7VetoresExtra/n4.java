@@ -31,9 +31,19 @@ public class n4 {
 
         for(int i = 0; i < vetor.length; i++){
             vetorDois[i] = vetor[a];
+            System.out.println("  ||| SEGUNDO VETOR INVERSO: "+vetorDois[i]);
+            a--;
+        }
 
-            System.out.println("  ||| SEGUNDO VETOR INVERSO: "+vetorDois);
+        // SE OS DOIS VETORES FOREM IGUAIS
+        for(int i = 0; i < vetor.length; i++){
+            if(vetor[i] == vetorDois[i]){
+                System.out.println("VALORES IGUAIS ENCONTRADOS NO ÍNDICE "+i+" | VALOR "+vetorDois[i]);
+            }
+        }
 
+        if(vetor[0] == vetorDois[0] & vetor[1] == vetorDois[1] & vetor[2] == vetorDois[2] & vetor[3] == vetorDois[3] & vetor[4] == vetorDois[4]){
+            System.out.println("OS VETORES SÃO IGUAIS");
         }
 
 
